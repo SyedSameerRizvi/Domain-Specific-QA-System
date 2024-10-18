@@ -2,7 +2,7 @@
 
 This Domain-Specific QA System is a Streamlit-based application that leverages advanced NLP techniques and the GPT-4o model to provide accurate answers to user queries across medical, legal, and financial domains.
 
-Check out the app here: 
+Check out the app here: [Domain Specific Q&A System](https://domain-specific-q-a-system.streamlit.app/)
 
 ## Features
 - **Domain-Specific Querying**: Supports queries in medical, legal, and financial domains.
