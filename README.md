@@ -41,3 +41,14 @@ OPENAI_API_KEY=your_api_key_here
 2. The system fetches relevant content from domain-specific APIs.
 3. The GPT-4o model processes the query and context to generate an answer.
 4. The answer is displayed to the user through the Streamlit interface.
+
+- Medical Question: 
+![image](https://github.com/user-attachments/assets/830731b6-2bc9-4ff2-a7d5-7e1e5aa59074)
+
+
+- Legal Question:
+![image](https://github.com/user-attachments/assets/b4502ef3-87b7-4298-aba9-f02f6433bb0a)
+
+
+- Finance question:
+![image](https://github.com/user-attachments/assets/68a96531-3333-40b8-9287-538350a8f151)
