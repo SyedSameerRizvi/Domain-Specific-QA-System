@@ -10,10 +10,7 @@ from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 import requests
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Streamlit UI
+# Streamlit 
 st.title("Domain Specific QA System")
 
 # Sidebar for user to enter their OpenAI API key
@@ -45,7 +42,7 @@ def get_answer(query, domain="medical"):
     if len(context) > max_context_length:
         context = context[:max_context_length]  # Truncate the context
 
-    # Use gpt-4o model
+    # Use openAI model
     llm = ChatOpenAI(model_name="gpt-4o", openai_api_key=openai_api_key)
     prompt_template = PromptTemplate(
         input_variables=["context", "query"],
@@ -57,11 +54,11 @@ def get_answer(query, domain="medical"):
         ),
     )
     
-    # Create a sequence using RunnableSequence
+    # A sequence using RunnableSequence
     llm_chain = RunnableSequence(prompt_template | llm)
     response = llm_chain.invoke({"context": context, "query": query})
     
-    # Extract the answer from the response object
+    # Extract the answer from the response variable
     answer = response.content
     
     return answer
